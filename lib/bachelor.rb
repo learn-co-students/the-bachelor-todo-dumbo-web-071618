@@ -44,6 +44,5 @@ def get_average_age_for_season(data, season)
   data[season].each do |contestant|
     age += contestant["age"].to_i
   end
-  puts age
 return (age/25.00).ceil
 end
