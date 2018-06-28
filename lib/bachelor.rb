@@ -1,5 +1,5 @@
 def get_first_name_of_season_winner(data, string)
-string = string.to_sym
+
 data.each do |season_number, seasons_hash| 
     if season_number == string
     seasons_hash.each do |contestant|
