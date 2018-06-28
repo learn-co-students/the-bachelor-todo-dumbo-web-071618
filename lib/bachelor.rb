@@ -5,7 +5,7 @@ bachelor.each do |season_number, seasons_hash|
   seasons_hash.each do |contestant|
     if season_number == string
       if contestant[:status] == "Winner"
-        return contestant[:name]
+        return contestant[:name].split(" ")[0]
       end
     end
   end
