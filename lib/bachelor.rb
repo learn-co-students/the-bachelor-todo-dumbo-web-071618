@@ -1,8 +1,8 @@
 def get_first_name_of_season_winner(data, season)
-string = string.to_sym
+season = season.to_sym
 data.each do |season_number, seasons_hash| 
   seasons_hash.each do |contestant|
-    if season_number == string
+    if season_number == season
       if contestant[:status] == "Winner"
         return contestant[:name].split(" ")[0]
       end
